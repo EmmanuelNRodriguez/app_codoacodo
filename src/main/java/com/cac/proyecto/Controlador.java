@@ -75,9 +75,6 @@ public class Controlador extends HttpServlet { // Declaración de la clase Contr
     // Método GET para obtener todas las películas almacenadas en la base de datos y devolverlas como JSON
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Configurar cabeceras CORS
-        System.out.println("GET request received");
-        response.getWriter().write("Servlet is working");
-
         response.setHeader("Access-Control-Allow-Origin", "*"); // Permitir acceso desde cualquier origen
         response.setHeader("Access-Control-Allow-Methods", "*"); // Métodos permitidos
         response.setHeader("Access-Control-Allow-Headers", "Content-Type"); // Cabeceras permitidas
@@ -96,7 +93,7 @@ public class Controlador extends HttpServlet { // Declaración de la clase Contr
             while (resultSet.next()) {
                 // Crear un objeto Pelicula con los datos de cada fila
                 Pelicula pelicula = new Pelicula(
-                    resultSet.getInt("id_pelicula"),
+                    resultSet.getInt("idPelicula"),
                     resultSet.getString("titulo"),  
                     resultSet.getString("genero"),
                     resultSet.getString("duracion"),
