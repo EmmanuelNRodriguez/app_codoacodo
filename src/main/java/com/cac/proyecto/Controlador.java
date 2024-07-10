@@ -1,5 +1,5 @@
 // package com.ar.movies;
-package com.cac.proyecto;
+package com.cac.proyecto; //Nuestro proyecto de Java para el grupo 10
 
 // Importaciones necesarias para la clase Controlador
 import com.fasterxml.jackson.databind.ObjectMapper; // Importación de ObjectMapper de Jackson para convertir objetos Java a JSON y viceversa

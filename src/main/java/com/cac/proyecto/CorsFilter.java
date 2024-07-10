@@ -1,5 +1,5 @@
 // package com.ar.movies;
-package com.cac.proyecto;
+package com.cac.proyecto; //Configuracion de nuestro proyecto para el grupo 10
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
